@@ -1,0 +1,68 @@
+1. what is web application?
+
+A web application is a software program that runs on a web server and is accessed through a browser. It uses a client-server model, where the frontend runs in the browser and the backend runs on the server. Examples include Gmail, Facebook, and e-commerce sites. Web applications are dynamic, interactive, and require both frontend, backend, and database to work together.
+
+2. what is web server?
+
+A web server is software or hardware that stores and serves web content to users. When a browser sends a request, the web server processes it, executes backend code if needed, interacts with the database, and sends the response back. Examples are Apache, Nginx, and Tomcat.
+     Why Do We Need a Web Server?
+
+To host websites/web applications
+To handle client requests
+To run backend logic
+To connect with databases
+To deliver content to users
+
+3. What is Frontend?
+
+Frontend is the visual part of a web application — everything the user sees and interacts with in the browser.
+
+4. What is Backend?
+
+Backend is the logic part of the application — it runs on the server and manages how the system works behind the scenes.
+
+Frontend is the part of a web application that the user interacts with (HTML, CSS, JavaScript). Backend is the server-side part that handles data, logic, authentication, and database operations. We need both because frontend provides user interface while backend handles processing, security, and data management. Together they make a complete web application.
+
+-----------------------------------
+Web Application
+
+“A web application is an application that runs in a browser and is accessed by the user through the internet. It does not require installation; users interact with it using a web browser.”
+
+⭐ Web Server
+
+“A web server handles the requests sent from the browser and sends the appropriate response back. It processes backend code and delivers data or web pages to the client.”
+
+⭐ Frontend
+
+“Frontend is the client-side part of the application — the user interface. It includes everything the user sees and interacts with, like buttons, forms, layouts, and design.”
+
+⭐ Backend
+
+“Backend is the server-side part of the application. It handles business logic, processes data, communicates with the database, and sends results back to the frontend.”
+----------------------------
+
+5. What is HTML?
+
+HTML (HyperText Markup Language) is the skeleton of a webpage.
+It defines the structure and content.
+    Why HTML?
+Because a browser needs a layout to display content.
+Without HTML → nothing will show on the page.
+
+6. What is CSS?
+
+CSS (Cascading Style Sheets) is the design of a webpage.
+It makes the page look beautiful.
+    Why CSS?
+Because HTML alone looks plain and boring.
+CSS makes the UI attractive and user-friendly.
+
+7. what is JavaScript?
+
+JavaScript is a programming language that adds interactivity to a webpage.
+     Why JavaScript?
+Because users need dynamic and interactive pages.
+Without JS → page is static and cannot react to user actions.
+
+HTML gives structure, CSS gives style, and JavaScript gives interactivity.
+Together, they form the foundation of any web application. HTML builds the layout, CSS makes it look beautiful, and JavaScript makes the page dynamic and interactive.
