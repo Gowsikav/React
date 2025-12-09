@@ -66,3 +66,9 @@ Without JS → page is static and cannot react to user actions.
 
 HTML gives structure, CSS gives style, and JavaScript gives interactivity.
 Together, they form the foundation of any web application. HTML builds the layout, CSS makes it look beautiful, and JavaScript makes the page dynamic and interactive.
+
+BROWSER WORKFLOW (One-Line Version)
+
+URL → DNS → TCP → HTTPS → Request → Web Server → Backend → DB → Response → DOM → CSSOM → Render Tree → Paint → JS Execution → Final UI
+
+The browser workflow starts with DNS resolution, establishing a TCP/HTTPS connection, sending a request to the web server, which forwards it to the backend. After receiving the HTML/CSS/JS response, the browser builds the DOM, CSSOM, render tree, performs layout and painting, then executes JavaScript to finally render the web page.
