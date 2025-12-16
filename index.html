@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React CDN</title>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script>
+      let heading = React.createElement("div", {id:"seconddiv"}, [
+        React.createElement("h1", {}, "Hello World from React!"),
+        React.createElement("h2", {}, "This is a subheading"),
+        React.createElement("p", {}, "This is a paragraph created using React."),
+        React.createElement("div",{ id:"innerdiv"},[
+            React.createElement("a", { href:"https://x-workz.com/"}, "Xworkz Link",),
+            React.createElement('img',{src:"https://raw.githubusercontent.com/x-workzdev/Xworkz-images/develop/Gallery/45.jpeg", alt:"Xworkz Logo",width:'150px',height:'150px'})
+        ])
+      ]);
+
+      let root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(heading);
+      
+    </script>
+
+  </body>
+</html>
