@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "react create practice",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start":"parcel index.html"
   },
   "author": "",
   "license": "ISC",
