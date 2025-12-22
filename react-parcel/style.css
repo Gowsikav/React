@@ -1,0 +1,151 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 40px;
+  background-color: #111;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  cursor: pointer;
+}
+
+.nav ul {
+  font-weight: 500;
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav ul li {
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.nav ul li:hover {
+  color: #fc8019; 
+}
+
+.body{
+    margin: 30px;
+    font-weight: 400;
+}
+
+.food-items{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;   
+    column-gap: 5px;
+}
+
+.card {
+  width: 270px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+.card-img img {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  padding: 10px;
+}
+
+.card-details {
+  padding: 10px;
+}
+
+.card-details h2 {
+  font-size: 18px;
+  margin: 0 0 6px;
+}
+
+.card-details h4 {
+  font-size: 14px;
+  margin: 0 0 6px;
+  color: #2e7d32;
+}
+
+.card-details p {
+  font-size: 13px;
+  margin: 2px 0;
+  color: #555;
+}
+
+.footer {
+  background-color: #111;
+  color: #fff;
+  padding: 40px 60px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-top h2 {
+  margin-bottom: 6px;
+  color: #fc8019;
+}
+
+.footer-top p {
+  color: #ccc;
+  max-width: 400px;
+  margin-bottom: 30px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.footer-links div {
+  min-width: 150px;
+}
+
+.footer-links h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.footer-links ul li:hover {
+  color: #fc8019;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+}
+
