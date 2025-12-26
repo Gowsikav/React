@@ -1,17 +1,28 @@
-import { CARD_DATA } from "../utility/constants";
+import { useState } from "react";
+import { RES_DATA } from "../utility/constants";
 import RestoCard from "./RestoCard";
 
 export let Body = () => {
+  const [listOfRestaurants, setListOfRestaurants] = useState(RES_DATA);
   return (
     <div className="body">
+      <div className="search">
+
+        <button onClick={() => {
+          let filteredData = listOfRestaurants.filter((restaurant) =>
+            restaurant.card.card.info.avgRating >= 4.5)
+          setListOfRestaurants(filteredData)
+        }}>Top rated</button>
+
+      </div>
       <h1>Fast Food</h1>
       <h3>Order in deliciously juicy and tasty items to curb your cravings!</h3>
       <h5>Restaurants to explore</h5>
       <div className="food-items">
-        {CARD_DATA.map((restaurant) => (
+        {listOfRestaurants.map((restaurant) => (
           <RestoCard resobj={restaurant} key={restaurant.card.card.info.id} />
         ))}
       </div>
-    </div>
+    </div >
   );
 };

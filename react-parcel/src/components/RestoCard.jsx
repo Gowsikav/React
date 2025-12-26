@@ -1,7 +1,6 @@
 import { RESTO_CARD_IMG } from "../utility/constants";
 
 let RestoCard = ({ resobj }) => {
-  console.log(resobj);
   const info = resobj.card.card.info;
   return (
     <div className="card">
