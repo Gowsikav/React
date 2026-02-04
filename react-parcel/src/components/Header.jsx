@@ -21,6 +21,7 @@ let Header = () => {
           <li><Link to="/">Home</Link></li>
           <li><Link to="/about">About</Link></li>
           <li><Link to="/cart">Cart</Link></li>
+          <li><Link to="/form">Register</Link></li>
           <li><button onClick={() =>
                 setButton(button === "login" ? "logout" : "login")
               }>{button}</button></li>
