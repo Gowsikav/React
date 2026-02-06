@@ -1,8 +1,7 @@
-import {useState } from "react";
+import { useState } from "react";
 
 const Register = () => {
-
-  const initObject={
+  const initObject = {
     userName: "",
     email: "",
     password: "",
@@ -13,7 +12,7 @@ const Register = () => {
     pincode: "",
     food: "",
     gender: "",
-  }
+  };
 
   const [formData, setFormData] = useState(initObject);
 
@@ -22,6 +21,7 @@ const Register = () => {
       ...formData,
       [event.target.name]: event.target.value,
     });
+    console.log(formData);
   }
 
   function submitForm(e) {
@@ -43,17 +43,20 @@ const Register = () => {
       style={{ display: "flex", justifyContent: "center", marginTop: "50px" }}
     >
       <form onSubmit={submitForm} style={{ textAlign: "center" }}>
-        <input type="text" placeholder="Enter Name"
-        name="userName"
-        value={formData.userName}
-         onChange={handleChange} />
+        <input
+          type="text"
+          placeholder="Enter Name"
+          name="userName"
+          value={formData.userName}
+          onChange={handleChange}
+        />
         <br />
         <br />
         <input
           type="email"
           placeholder="Enter Email"
           name="email"
-        value={formData.email}
+          value={formData.email}
           onChange={handleChange}
         />
         <br />
@@ -62,50 +65,62 @@ const Register = () => {
           type="password"
           placeholder="Enter Password"
           name="password"
-        value={formData.password}
+          value={formData.password}
           onChange={handleChange}
         />
-        <br />
-        <br />
-        <input type="text" placeholder="Enter Phone"
-        name="phone"
-        value={formData.phone} onChange={handleChange} />
-        <br />
-        <br />
-        <input type="number" placeholder="Enter Age" 
-        name="age"
-        value={formData.age}onChange={handleChange} />
         <br />
         <br />
         <input
           type="text"
-          placeholder="Enter Address" name="address"
-        value={formData.address}
+          placeholder="Enter Phone"
+          name="phone"
+          value={formData.phone}
           onChange={handleChange}
         />
         <br />
         <br />
-        <input type="text" placeholder="Enter City"
-        name="city"
-        value={formData.city} onChange={handleChange} />
+        <input
+          type="number"
+          placeholder="Enter Age"
+          name="age"
+          value={formData.age}
+          onChange={handleChange}
+        />
+        <br />
+        <br />
+        <input
+          type="text"
+          placeholder="Enter Address"
+          name="address"
+          value={formData.address}
+          onChange={handleChange}
+        />
+        <br />
+        <br />
+        <input
+          type="text"
+          placeholder="Enter City"
+          name="city"
+          value={formData.city}
+          onChange={handleChange}
+        />
         <br />
         <br />
         <input
           type="text"
           placeholder="Enter Pincode"
           name="pincode"
-        value={formData.pincode}
+          value={formData.pincode}
           onChange={handleChange}
         />
         <br />
         <br />
-        <select onChange={handleChange} name="food"
-        value={formData.food}>
+        <select onChange={handleChange} name="food" value={formData.food}>
           <option value="">Select food</option>
           <option value="Briyani">Briyani</option>
           <option value="Pizza">Pizza</option>
           <option value="Burger">Burger</option>
-        </select>{" "}
+        </select>
         <br />
         <br />
         <div>
