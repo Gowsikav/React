@@ -16,6 +16,7 @@ export let Body = () => {
     try {
       setLoading(true);
       let allRestaurants = [];
+      const seenIds = new Set(); // Track unique IDs
       let offset = 0;
 
       for (let i = 0; i < 5; i++) {
@@ -31,6 +32,12 @@ export let Body = () => {
             ?.filter((card) =>
               card?.card?.card?.["@type"]?.includes("Restaurant"),
             )
+            .filter((card) => {
+              const id = card.card.card.info.id;
+              if (seenIds.has(id)) return false;
+              seenIds.add(id);
+              return true;
+            })
             .map((card) => ({
               card: {
                 card: {
