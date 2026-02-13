@@ -7,7 +7,7 @@ export let About = ()=>{
             <p>About page</p>
             <AboutContent/>
             <hr></hr>
-            <AboutClass/>
+            <AboutClass lang={"Java"}/>
         </div>
     );
 }
