@@ -17,6 +17,11 @@ class AboutClass extends React.Component {
     };
   }
 
+  handleIncrement = () =>
+    this.setState({
+      count: this.state.count + this.state.incrementValue,
+    });
+    
   render() {
     console.log("render method called");
 
@@ -24,15 +29,7 @@ class AboutClass extends React.Component {
       <div>
         <p>Count: {this.state.count}</p>
 
-        <button
-          onClick={() =>
-            this.setState({
-              count: this.state.count + this.state.incrementValue,
-            })
-          }
-        >
-          Increment
-        </button>
+        <button onClick={this.handleIncrement}>Increment</button>
 
         <button
           onClick={() =>
