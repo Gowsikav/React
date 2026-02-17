@@ -1,11 +1,10 @@
 import React from "react";
-
-import React from "react";
+import User from "./User";
 
 class AboutClass extends React.Component {
   constructor(props) {
     super(props);
-    console.log("constructor is called");
+    console.log("constructor call in AboutClass");
     console.log(props);
 
     this.state = {
@@ -17,11 +16,10 @@ class AboutClass extends React.Component {
     };
   }
 
-  handleIncrement = () =>
-    this.setState({
-      count: this.state.count + this.state.incrementValue,
-    });
-    
+  componentDidMount() {
+    console.log("component mount call in AboutClass");
+  }
+
   render() {
     console.log("render method called");
 
@@ -29,7 +27,15 @@ class AboutClass extends React.Component {
       <div>
         <p>Count: {this.state.count}</p>
 
-        <button onClick={this.handleIncrement}>Increment</button>
+        <button
+          onClick={() =>
+            this.setState({
+              count: this.state.count + this.state.incrementValue,
+            })
+          }
+        >
+          Increment
+        </button>
 
         <button
           onClick={() =>
@@ -68,6 +74,7 @@ class AboutClass extends React.Component {
           <li>JPA/Hibernate</li>
           <li>SQL</li>
         </ul>
+        <User/>
       </div>
     );
   }
