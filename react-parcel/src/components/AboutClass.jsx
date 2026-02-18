@@ -17,7 +17,15 @@ class AboutClass extends React.Component {
   }
 
   componentDidMount() {
-    console.log("component mount call in AboutClass");
+    console.log("componentDidMount call in AboutClass");
+  }
+
+  componentDidUpdate(){
+    console.log("state updated in Component")
+  }
+
+  componentWillUnmount(){
+    console.log("AboutClass component unmounted")
   }
 
   render() {
