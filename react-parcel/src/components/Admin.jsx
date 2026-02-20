@@ -11,6 +11,10 @@ class Admin extends React.Component {
     console.log("componentDidMount in Admin");
   }
 
+  componentWillUnmount(){
+    console.log("componentDidWillUnmount call in Admin")
+  }
+
   render() {
     console.log("Admin render method");
     return (

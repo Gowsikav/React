@@ -10,6 +10,10 @@ class Admin extends React.Component {
     console.log("componentDidMount in Guest");
   }
 
+  componentWillUnmount(){
+    console.log("componentDidWillUnmount call in Guest")
+  }
+
   render() {
     console.log("Guest render method");
     return (
