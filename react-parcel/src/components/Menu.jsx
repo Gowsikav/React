@@ -1,8 +1,8 @@
 const Menu = ({ data }) => {
-  const { name } = data;
+  const { name,price } = data;
   return (
     <div>
-      <p>{name}</p>
+      <p>{name}- Rs{price}</p>
     </div>
   );
 };

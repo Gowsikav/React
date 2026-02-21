@@ -1,15 +1,11 @@
-import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Menu from "./Menu";
-import { MENU } from "../utility/constants";
+import useRestaurantMenuData from "../utility/useRestaurantMenuData";
 
 const RestaurantMenu = () => {
   const { resId } = useParams();
-  const [menu, setMenu] = useState([]);
 
-  useEffect(() => {
-    setMenu(MENU.data);
-  }, []);
+  const menu=useRestaurantMenuData();
 
   return (
     <div>
