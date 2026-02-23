@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { MENU } from "./constants";
 
 const useRestaurantMenuData = () => {
+
+  console.log("useRestaurantMenuData component")
   const [menuData, setMenuData] = useState([]);
 
   function fetchMenu() {
