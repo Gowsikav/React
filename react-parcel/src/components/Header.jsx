@@ -1,9 +1,12 @@
 import { useEffect, useState } from "react";
 import { SWIGGY_LOGO } from "../utility/constants";
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../utility/useOnlineStatus";
 
 let Header = () => {
   const [button,setButton]=useState("login");
+
+  let isOnline=useOnlineStatus();
 
   useEffect(()=>{
     console.log("executing after rendering");
@@ -18,6 +21,7 @@ let Header = () => {
       </div>
       <div className="nav">
         <ul>
+          <li>Online status: {isOnline==true ?"🟢":"🔴"} </li>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/about">About</Link></li>
           <li><Link to="/cart">Cart</Link></li>
